@@ -198,7 +198,7 @@ ul, ol {
     background: #F38281;
 }
 /* ! header content END*/
-/* !main about*/
+/* !about*/
 .section {
     padding-top: 70px;
 }
@@ -249,6 +249,7 @@ ul, ol {
 .about__item {
     width: 33.3%;
     position: relative;
+    cursor: pointer;
 }
 .about__item:hover .about__super-team {
     display: flex;
@@ -265,7 +266,6 @@ ul, ol {
     width: 370px;
     height: 338px;
     background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
-    cursor: pointer;
 }
 .super-team__icon {
     background-image: url(../img/superteam-icons.svg);
@@ -280,4 +280,37 @@ ul, ol {
     line-height: 28px;
     text-transform: uppercase;
     color: var(--secondary-color)
+}
+/* !about END*/
+/* !feature*/
+.feature {
+    padding: 0;
+    background: #95E1D3;
+    color: var(--secondary-color);
+}
+.feature-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.feature__item:first-child {
+    border-left: 1px solid var(--secondary-color);
+}
+.feature__item {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 250px;
+    width: 20%;
+    border-right: 1px solid var(--secondary-color);
+}
+.feature__item b {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 75px;
+}
+.feature__text {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
 }
