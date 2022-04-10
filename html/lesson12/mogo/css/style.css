@@ -314,3 +314,65 @@ ul, ol {
     font-size: 24px;
     line-height: 28px;
 }
+/* !feature END*/
+/* !service*/
+.service .section-line {
+    margin-bottom: 80px;
+}
+.service {
+    padding-bottom: 90px;
+}
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 150px;
+    column-gap: 30px;
+}
+.service__item {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    column-gap: 30px;
+    color: #2D3033;
+}
+.service__item-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    min-height: 50px;
+}
+.service__text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+}
+.service__icon {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    grid-row: 1/-3;
+}
+.service__icon--photo {
+    background-image: url(../img/services1.svg);
+}
+.service__icon--web {
+    background-image: url(../img/services2.svg);
+}
+.service__icon--creative {
+    background-image: url(../img/services3.svg);
+}    
+.service__icon--seo {
+    background-image: url(../img/services4.svg);
+}
+.service__icon--css {
+    background-image: url(../img/services5.svg);
+}    
+.service__icon--digital {
+    background-image: url(../img/services6.svg);
+}    
+/* !service END*/
+
+
