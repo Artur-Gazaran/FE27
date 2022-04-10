@@ -374,5 +374,35 @@ ul, ol {
     background-image: url(../img/services6.svg);
 }    
 /* !service END*/
+/* !device*/
+.device {
+    min-height: 868px;
+    background-image: url(../img/design.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.8);
+    background-blend-mode:overlay;
+    background-attachment: fixed;
+}
+.device__img-wrapper {
+    position: relative;
+}
+.device__img--tablet {
+    background-image: url(../img/design-tablet.png);
+    width: 1170px;
+    height: 525px;
+    margin: 0 auto;
+}
+.device__img--iphone {
+    position: absolute;
+    content: '';
+    top: 235px;
+    right: 345px;
+    background-image: url(../img/design-iphone.png);
+    width: 200px;
+    height: 411px;
+}
 
+/* !device END*/
 
