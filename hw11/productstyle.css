@@ -8,6 +8,17 @@
     padding:0 15px;
     width: 1280px;
 }
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1;
+}
+ul, li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
 .product{
     width: 100%;
     margin: 0 auto;
@@ -35,9 +46,7 @@
         background-position: 0% 25%;
     }
 }  */
-ul, li{
-    list-style-type: none;
-}
+
 .product__wrapper{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -249,9 +258,6 @@ input{
     letter-spacing: 2.4px;
     color: #212121;
 }
-a{
-    text-decoration: none;
-}
 .number-minus,
 .number-plus{
     font-family: 'Montserrat', 'sans-serif';
@@ -292,12 +298,15 @@ a{
     background: #57B9BB;
     border-radius: 50%;
 }
-.colorfix .blue:checked + span{
+.colorfix .blue:checked + span,
+.colorfix .violet:checked + span,
+.colorfix .red:checked + span,
+.colorfix .black:checked + span{
     width: 16px;
     height: 16px;
     top:1px;
 }
-.colorfix .blue:checked + span::before{
+/* .colorfix .blue:checked + span::before{
     content: "";
     clear: both;
     display: block;
@@ -308,7 +317,7 @@ a{
     position: absolute;
     top:-9px;
     left:-10px;
-}
+} */
 .colorfix .violet + span{
     position: absolute;
     width: 11px;
@@ -318,6 +327,7 @@ a{
     background: #8F76BC;
     border-radius: 50%;
 }
+
 .colorfix .red + span{
     position: absolute;
     width: 11px;
@@ -336,7 +346,6 @@ a{
     background: #292929;
     border-radius: 50%;
 }
-
 .colorfix .green + span{
     position: absolute;
     width: 16px;
